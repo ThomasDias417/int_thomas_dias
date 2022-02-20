@@ -8,7 +8,7 @@ body{
 }
 header{
     width: 100vw;
-    height: 30vh;
+    height: 33vh;
     position: fixed;
     top: 0px;
     display: flex;
@@ -141,7 +141,7 @@ header{
 main{
     width: 100vw;
     height: auto;
-    margin-top: 32.5vh;
+    margin-top: 35vh;
     z-index: 1;
 }
 /* main section*/
