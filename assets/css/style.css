@@ -1,14 +1,32 @@
+@font-face{
+    font-family: "Poppins";
+    src: url("Fonts/Poppins-Regular.woff2"), url("Fonts/Poppins-Regular.woff");
+
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("Fonts/Poppins-Italic.woff2"), url("Fonts/Poppins-Italic.woff");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("Fonts/Poppins-Bold.woff2"), url("Fonts/Poppins-Bold.woff");
+    font-weight: bold;
+}
 html{
     overflow-x: hidden;
+
 }
 body{
     width: 100vw;
     height: auto;
-    
+     background-color: rgb(250, 250, 250);
 }
 header{
     width: 100vw;
-    height: 33vh;
+    height: 195px;
     position: fixed;
     top: 0px;
     display: flex;
@@ -87,6 +105,12 @@ header{
     margin: 0;
     outline: 0;
     border: 0;
+    background-color: rgb(245, 245, 245);
+}
+.search_area input[type="text"]:focus{
+    font-family: "Poppins",sans-serif;
+    
+    color: rgba(81,146,89,0.8);
 }
 .search_loupe{
     width: 40px;
@@ -153,6 +177,9 @@ main{
     height: auto;
     display: flex;
     justify-content: center;
+    background-color: rgb(250, 250, 250);
+    border-top: 1px solid rgba(27,27,27,0.3);
+    box-shadow: 0px 2px 2px rgba(27,27,27,0.1);
 }
 .list_recette{
     width: 100%;
@@ -168,6 +195,10 @@ main{
     height: 405px;
     display: flex;
     flex-direction: column;
+    border-block: 1px solid rgba(27,27,27,0.4);
+    border-radius: 8px;
+    box-shadow: 0px 2px 3px rgb(27 27 27 / 20%);
+    background-color: #fff;
 }
 
 /* recette_card*/
@@ -348,4 +379,171 @@ main{
     width: auto;
     height:27px;
     margin-right: 1px;
+}
+
+.container_friends{
+    display: none;
+}
+@media (min-width:800px) {
+    body{
+        width: 100vw;
+        height: auto;
+        
+    }
+    header{
+        width: 100vw;
+        height: 11vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15%;
+        z-index: 10;
+        background-color: rgb(250, 250, 250);
+        border-bottom: 1px solid rgba(27,27,27,0.3);
+        box-shadow: 0px 2px 2px rgba(27,27,27,0.1);
+    }
+
+    main{
+        margin-top: 170px;
+        display: flex;
+        width: 100vw;
+        height: auto;
+        
+    }
+    footer{
+
+        display: block;
+        position: fixed;
+        bottom: 23.7%;
+        right: 14%;
+        z-index: 10;
+
+    }
+    footer p{
+        font-size: 1rem;
+        font-style: italic;
+    }
+    .container_utility{
+        width:10%;
+        height: auto;
+    }
+
+    .utility_1{
+        display: none;
+    }
+    .utility_3{
+        display: none;
+    }
+    
+    .container_storie{
+        position: fixed;
+        top: 11%;
+        left: 0px;
+        width: 54.95%;
+        height: 85px;
+        z-index: 10;
+        background-color: #fff;
+        border-radius: 2px;
+        border-bottom: 1px solid rgba(27,27,27,0.3);
+        box-shadow: 0px 2px 2px rgba(27,27,27,0.1);
+    }
+    .container_search{
+        width: 25%;
+        height: auto;
+    }
+    .navigation{
+        position:static;
+        width: 25%;
+        height: 0px;
+        background-color: #fff;
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .container_recette{
+        width: 55%;
+        height: auto;
+        overflow-y: auto;
+       
+        border-right: 1px solid rgba(27,27,27,0.3);
+        box-shadow: 0px 2px 2px rgba(27,27,27,0.1);
+        justify-self: center;
+        
+    }
+    .list_recette{
+        margin-top: 15px;
+    }
+    .container_friends{
+        display: block;
+        
+        width: 40%;
+        height: 400px;
+        position: fixed;
+        top: 11.2%;;
+        right: 4.8%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        border-left: 1px solid rgba(27,27,27,0.4);
+        box-shadow: 0px 2px 2px rgba(27,27,27,0.1);
+        background-color: #fff;
+    }
+    .title_container_friend{
+        align-self: center;
+    }
+    .container_friends > h2{
+        
+        border-bottom: 1px solid rgba(27,27,27,0.3);
+        box-shadow: 0px 2px 2px rgba(27,27,27,0.1);
+    }
+    .list_friends{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        gap: 15px;
+    }
+    .title_container_friend{
+        margin-top: 15px;
+    }
+    .card_friend{
+        width: 90%;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-block: 1px solid rgba(27,27,27,0.3);
+        box-shadow: 0px 2px 2px rgba(27,27,27,0.1);
+        border-radius: 8px;
+        gap: 10px;
+    }
+    
+    .photo_user_friends{
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        
+    }
+    .photo_friends{
+        width: 80%;
+        height: auto;
+        padding-left: 10px;
+        border-left: 7px solid orange;
+    }
+    .friends_description{
+        width: 280px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .msg_friends{
+
+    }
 }
