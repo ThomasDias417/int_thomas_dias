@@ -275,7 +275,7 @@ main{
     top: 5px;
     display: flex;
     justify-content: center;
-    gap: 64%;
+    gap: 61%;
 }
 .info_photo > .duration{
     width: auto;
@@ -296,9 +296,7 @@ main{
     display: flex;
     justify-content: flex-start;
 }
-.off1{
-    display: none;
-}
+
 .off2{
     display: none;
 }
@@ -479,7 +477,7 @@ main{
         height: 400px;
         position: fixed;
         top: 11.2%;;
-        right: 3%;
+        right: 1%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
