@@ -23,8 +23,11 @@ header{
 /*header*/
 /*header utility*/
 .container_utility{
+    height: 40px;
+    width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     gap: 20%;
 }
 .container_utility img{
