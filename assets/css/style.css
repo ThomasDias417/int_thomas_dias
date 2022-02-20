@@ -479,7 +479,7 @@ main{
         height: 400px;
         position: fixed;
         top: 11.2%;;
-        right: 3.8%;
+        right: 3%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -487,6 +487,7 @@ main{
         border-left: 1px solid rgba(27,27,27,0.4);
         box-shadow: 0px 2px 2px rgba(27,27,27,0.1);
         background-color: #fff;
+
     }
     .title_container_friend{
         align-self: center;
@@ -542,7 +543,5 @@ main{
         justify-content: center;
         align-items: flex-start;
     }
-    .msg_friends{
-
-    }
+    
 }
